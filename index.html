@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="Emoji agenda de contatos">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="adiciona-contato">
+            <input type="text" name="nome-contato" id="nome-contato" placeholder="Adicione um contato" required>
+            <input type="number" name="telefone-contato" id="telefone-contato" placeholder="Adiciona telefone" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <th>Nome do contato</th>
+                <th>Telefone</th>
+                <th>Whatsapp?</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Danielle</td>
+                    <td>11 91234-5678</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Beatriz</td>
+                    <td>11 94321-9876</td>
+                    <td><img src="./images/whatsapp.png" alt="icone whatsapp"></td>
+                </tr>
+                <tr>
+                    <td>Cleonice</td>
+                    <td>11 94321-9876</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>Total contatos</td>
+                <td>3</td>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
